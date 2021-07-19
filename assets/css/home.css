@@ -111,10 +111,12 @@ main a{
 
 .Services-Carosel svg.prev{
     margin: auto;
+    margin-left: 10px;
 }
 
 .Services-Carosel svg.next{
     margin: auto;
+    margin-right: 10px;
 }
 
 #Services .Services-Carosel{
@@ -141,10 +143,6 @@ main a{
     padding: 10px 0 10px 0;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.45);
 }
-
-/* .Services-Carosel .set{
-    display: none;
-} */
 
 .Services-Carosel a{
     display: flex;
