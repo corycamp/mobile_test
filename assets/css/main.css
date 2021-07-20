@@ -509,7 +509,7 @@ footer {
 @media (max-width: 992px) {
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) and (min-width:575) {
         /* Begin Header */
         /* div#main-nav nav div.main-nav {
             display: none;
