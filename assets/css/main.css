@@ -315,7 +315,6 @@ footer {
     font-size: 18px;
     font-weight: 550;
     margin-left: 10px;
-    /* padding: 10px 10px; */
     width: 150px;
     padding: 12px 20px;
     background-color: var(--green1);
@@ -386,7 +385,7 @@ footer {
 
 /* End Footer */
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     /* Begin Header */
   
     div#main-nav nav{
@@ -509,21 +508,12 @@ footer {
 @media (max-width: 992px) {
 }
 
-@media (max-width: 1024px) and (min-width:575) {
+@media (max-width: 1024px) and (min-width: 768px) {
         /* Begin Header */
-        /* div#main-nav nav div.main-nav {
-            display: none;
-            padding: 0;
-        } */
-    
         div#main-nav nav div.main-nav a,
         div#header-bottom-bar a.nav-link {
             padding: 0;
             font-size: 0.8rem;
-        }
-    
-        div#header-bottom-bar {
-            display: none;
         }
     
         div#mobile-nav-control {

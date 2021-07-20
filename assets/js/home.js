@@ -19,7 +19,7 @@ let services_set = 0;
 //Carosel display
 let services_carosel = document.getElementById("Services").getElementsByClassName("set");
     
-if(window.screen.width > 1024){
+if(window.screen.width > 767){
     services_carosel[services_set].style.display = "flex";
 }
 else{
@@ -43,7 +43,6 @@ testimonial_carosel[testimonial_set].style.display = "block";
             testimonial_set--;
             testimonial_carosel[temp].style.display = "none";
             testimonial_carosel[testimonial_set].style.display = "block";
-            console.log(testimonial_set);
         }
     })
 
@@ -55,8 +54,6 @@ testimonial_carosel[testimonial_set].style.display = "block";
             testimonial_set++;
             testimonial_carosel[temp].style.display = "none";
             testimonial_carosel[testimonial_set].style.display = "block";
-            console.log(testimonial_set);
-            console.log(window.screen.width > 1200)
         }
     })
 
@@ -65,7 +62,7 @@ testimonial_carosel[testimonial_set].style.display = "block";
         if(services_set != 0){
             let temp = services_set;
             services_set--;
-            if(window.screen.width > 1024){
+            if(window.screen.width > 767){
                 services_carosel[services_set].style.display = "flex";
                 services_carosel[temp].style.display = "none";
             }
@@ -73,7 +70,6 @@ testimonial_carosel[testimonial_set].style.display = "block";
                 services_carosel[services_set].style.display = "block";
                 services_carosel[temp].style.display = "none";
             }
-            console.log(services_set);
         }
     })
 
@@ -82,7 +78,7 @@ testimonial_carosel[testimonial_set].style.display = "block";
         if(services_set < 2){
             let temp = services_set;
             services_set++;
-            if(window.screen.width > 1024){
+            if(window.screen.width > 767){
                 services_carosel[services_set].style.display = "flex";
                 services_carosel[temp].style.display = "none";
             }
@@ -90,7 +86,6 @@ testimonial_carosel[testimonial_set].style.display = "block";
                 services_carosel[services_set].style.display = "block";
                 services_carosel[temp].style.display = "none";
             }
-            console.log(services_set);
         }
     })
 })
