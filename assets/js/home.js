@@ -19,7 +19,7 @@ let services_set = 0;
 //Carosel display
 let services_carosel = document.getElementById("Services").getElementsByClassName("set");
     
-if(window.screen.width > 1200){
+if(window.screen.width > 1024){
     services_carosel[services_set].style.display = "flex";
 }
 else{
