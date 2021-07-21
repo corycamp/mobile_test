@@ -129,6 +129,10 @@ main a{
 
 .Services-Carosel .set{
     display: none;
+}
+
+.Services-Carosel .set.after{
+    display: flex;
     flex-flow: column;
     text-align: center;
     width: 100%;
@@ -137,7 +141,7 @@ main a{
 }
 
 .Services-Carosel .box{
-    width: 75%;
+    width: 180px;
     height: 100%;
     margin: auto;
     background-color: #1a1e1f;
@@ -394,7 +398,7 @@ main a{
 div#Services{
     display: flex;
     flex-flow: column;
-    width: 90%;
+    width: 95%;
     text-align: center;
     margin: auto;
     padding: 30px 0 30px 0;
@@ -421,19 +425,24 @@ div#Services{
     flex-flow: column;
     align-items: center;
     background-color: #1a1e1f;
-    height: 25vh;
+    height: 180px;
     width: 25%;
     margin: 0 auto;
     padding: 10px 0 10px 0;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.45);
+}
+
+.Services-Carosel .box:hover, .Pathways-Carosel .box:hover{
+    box-shadow: inset 1px 1px 5px white;
+    cursor: pointer;
 }
 
 .Services-Carosel .box img{
     justify-content: center;
     align-items: center;
     margin:auto;
-    width: auto;
-    height: 60%;
+    width: 120px;
+    height: 120px;
 }
 
 .Services-Carosel .box a{
@@ -449,6 +458,10 @@ div#Services{
 
 .Services-Carosel .set{
     display: none;
+}
+
+.Services-Carosel .set.after{
+    display: flex;
     flex-flow: row;
     margin: auto;
     width: 90%;
@@ -623,7 +636,7 @@ div#Pathways .Pathways-Carosel{
     display: flex;
     flex-flow: column;
     align-items: center;
-    height: 25vh;
+    height: 180px;
     width: 25%;
     margin: 0 30px 0 30px;
     box-shadow: inset 1px 2px 10px white;
@@ -634,8 +647,8 @@ div#Pathways .Pathways-Carosel{
     justify-content: center;
     align-items: center;
     margin:auto;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 .Pathways-Carosel .box a{
@@ -677,7 +690,7 @@ div#Services{
     flex-flow: column;
     align-items: center;
     background-color: #1a1e1f;
-    height: 25vh;
+    height: 250px;
     width: 25%;
     margin: 0 auto;
     padding: 10px 0 10px 0;
@@ -689,16 +702,12 @@ div#Services{
     cursor: pointer;
 }
 
-/* .Pathways-Carosel .box img:hover, .Pathways-Carosel .box:hover{
-    background-color: rgba(13, 110, 89, 0.842);
-} */
-
 .Services-Carosel .box img{
     justify-content: center;
     align-items: center;
     margin:auto;
-    width: auto;
-    height: 60%;
+    width: 120px;
+    height: 120px;
 }
 
 .Services-Carosel .box a{
@@ -714,12 +723,17 @@ div#Services{
 
 .Services-Carosel .set{
     display: none;
+}
+
+.Services-Carosel .set.after{
+    display: flex;
     flex-flow: row;
     margin: auto;
     width: 90%;
     justify-content: center;
     justify-content: space-around;
 }
+
 
 svg.prev:hover, svg.next:hover{
     background-color: white;

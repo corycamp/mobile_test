@@ -18,13 +18,7 @@ let services_set = 0;
 
 //Carosel display
 let services_carosel = document.getElementById("Services").getElementsByClassName("set");
-    
-if(window.screen.width > 767){
-    services_carosel[services_set].style.display = "flex";
-}
-else{
-    services_carosel[services_set].style.display = "block";
-}
+services_carosel[services_set].classList.toggle("after");
 
 let testimonial_carosel = document.getElementById("Testimonials").getElementsByClassName("set");
 testimonial_carosel[testimonial_set].style.display = "block";
@@ -62,14 +56,9 @@ testimonial_carosel[testimonial_set].style.display = "block";
         if(services_set != 0){
             let temp = services_set;
             services_set--;
-            if(window.screen.width > 767){
-                services_carosel[services_set].style.display = "flex";
-                services_carosel[temp].style.display = "none";
-            }
-            else{
-                services_carosel[services_set].style.display = "block";
-                services_carosel[temp].style.display = "none";
-            }
+            services_carosel[temp].classList.toggle("after");
+            services_carosel[services_set].classList.toggle("after");
+            
         }
     })
 
@@ -78,14 +67,8 @@ testimonial_carosel[testimonial_set].style.display = "block";
         if(services_set < 2){
             let temp = services_set;
             services_set++;
-            if(window.screen.width > 767){
-                services_carosel[services_set].style.display = "flex";
-                services_carosel[temp].style.display = "none";
-            }
-            else{
-                services_carosel[services_set].style.display = "block";
-                services_carosel[temp].style.display = "none";
-            }
+            services_carosel[temp].classList.toggle("after");
+            services_carosel[services_set].classList.toggle("after");
         }
     })
 })
